@@ -20,6 +20,17 @@ torchrun --nnodes 1 --nproc_per_node 8 scripts/train/train.py --config run_confi
 
 ## ✅ Evaluation (WIP)
 
+You can verify the agent’s observation and action spaces by running a dummy test to ensure the I/O data format between the environment and the agent is aligned.  
+Run the following command to perform this test.
+
+```bash
+python -m scripts.eval.start_agent_server
+
+# Wait for the server to start.
+
+python -m challenge.scripts.start_dummy_evaluator --config challenge/run_configs/eval/gr00t_n1_5_on_real_dummy.py --server
+```
+
 
 ## 📋 Rules
 Please check out the [onsite competition rules](./onsite_competition_rules_en-US.md).
