@@ -1,5 +1,5 @@
 model_type: gr00t_n1_5
-dataset_path: # TODOs
+dataset_path: # TODOs change data path here
    - /mnt/workspace/iros_processed_gr00t/Place_the_banana_on_the_painting_of_guan_yu
    - /mnt/workspace/iros_processed_gr00t/Gather_yellow_bottle_on_the_basket
    - /mnt/workspace/iros_processed_gr00t/Make_a_meat-only_sandwich
