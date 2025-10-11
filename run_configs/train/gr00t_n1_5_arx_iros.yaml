@@ -1,32 +1,32 @@
 model_type: gr00t_n1_5
-dataset_path: # TODOs change data path here
-   - /mnt/workspace/iros_processed_gr00t/Place_the_banana_on_the_painting_of_guan_yu
-   - /mnt/workspace/iros_processed_gr00t/Gather_yellow_bottle_on_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Make_a_meat-only_sandwich
-   - /mnt/workspace/iros_processed_gr00t/Choose_the_5_dollars_gift_box_and_add_it_to_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Gather_brown_bottle_on_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Place_the_mango_on_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Choose_the_50_dollars_gift_box_and_add_it_to_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Place_the_carrot_on_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Make_a_mixed_sandwich_(meat_on_top)
-   - /mnt/workspace/iros_processed_gr00t/Choose_the_10_dollars_gift_box_and_add_it_to_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Place_the_banana_on_the_painting_of_van_gogh
-   - /mnt/workspace/iros_processed_gr00t/Gather_red_cap_bottle_on_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Gather_orange_cap_bottle_on_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Choose_the_30_dollars_gift_box_and_add_it_to_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Place_the_banana_on_the_painting_of_monkey_king
-   - /mnt/workspace/iros_processed_gr00t/Place_the_banana_on_the_painting_of_newton
-   - /mnt/workspace/iros_processed_gr00t/Place_the_apple_on_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Place_the_orange_on_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Make_a_vegan_sandwich
-   - /mnt/workspace/iros_processed_gr00t/Make_a_mixed_sandwich_(veggies_on_top)
-   - /mnt/workspace/iros_processed_gr00t/Choose_the_35_dollars_gift_box_and_add_it_to_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Choose_the_45_dollars_gift_box_and_add_it_to_the_basket
-   - /mnt/workspace/iros_processed_gr00t/Place_the_banana_on_the_painting_of_mona_lisa
-   - /mnt/workspace/iros_processed_gr00t/Place_the_banana_on_the_plate
-   - /mnt/workspace/iros_processed_gr00t/Place_the_banana_on_the_painting_of_giant_panda
-num_gpus: 1 #8 #1
-batch_size: 3
+dataset_path:
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_banana_on_the_painting_of_guan_yu
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Gather_yellow_bottle_on_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Make_a_meat-only_sandwich
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Choose_the_5_dollars_gift_box_and_add_it_to_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Gather_brown_bottle_on_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_mango_on_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Choose_the_50_dollars_gift_box_and_add_it_to_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_carrot_on_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Make_a_mixed_sandwich_(meat_on_top)
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Choose_the_10_dollars_gift_box_and_add_it_to_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_banana_on_the_painting_of_van_gogh
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Gather_red_cap_bottle_on_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Gather_orange_cap_bottle_on_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Choose_the_30_dollars_gift_box_and_add_it_to_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_banana_on_the_painting_of_monkey_king
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_banana_on_the_painting_of_newton
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_apple_on_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_orange_on_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Make_a_vegan_sandwich
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Make_a_mixed_sandwich_(veggies_on_top)
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Choose_the_35_dollars_gift_box_and_add_it_to_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Choose_the_45_dollars_gift_box_and_add_it_to_the_basket
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_banana_on_the_painting_of_mona_lisa
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_banana_on_the_plate
+   - ./data/dataset/IROS-2025-Challenge-Manip/train_real/Place_the_banana_on_the_painting_of_giant_panda
+num_gpus: 1
+batch_size: 4
 output_dir: /data/Checkpoints/runs/gr00t_n1_5_arx_iros_20251009_tmp
 max_steps: 10000
 tune_visual: True
