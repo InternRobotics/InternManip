@@ -27,6 +27,14 @@ eval_cfg = EvalCfg(
     ),
     env=EnvCfg(
         env_type='dummy',
+        env_settings=GenmanipEnvSettings(
+            dataset_path='./data/dataset/IROS-2025-Challenge-Manip/validation',
+            res_save_path='./results',
+            is_save_img=False,
+            aloha_split_camera_enable=AlohaSplitCameraEnable(
+                top_camera=True, left_camera=True, right_camera=True
+            ),
+        ),
     ),
     distributed_cfg=DistributedCfg(
         num_workers=2,
