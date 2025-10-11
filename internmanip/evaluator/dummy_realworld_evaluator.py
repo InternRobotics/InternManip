@@ -2,8 +2,7 @@ from internmanip.evaluator.base import Evaluator
 from internmanip.configs.evaluator.eval_cfg import EvalCfg
 from internmanip.configs.env.genmanip_env import EpisodeInfo
 
-
-class RealWorldEvaluator(Evaluator):
+class DummyRealWorldEvaluator(Evaluator):
     def __init__(self, config: EvalCfg):
         # 设置 episode 列表
         if config.env.env_settings.episode_list is None \
@@ -13,7 +12,6 @@ class RealWorldEvaluator(Evaluator):
         super().__init__(config)
 
     def eval(self, distributed=False):
-        """真机环境评估流程 - 只运行episode，不统计成功率"""
         print("Starting real world evaluation...")
         print("Controls: 'p' to pause, 'q' to quit")
 

@@ -11,6 +11,7 @@ class EnvWrapperRegistry(Enum):
     SIMPLER = 'SimplerEnv'
     CALVIN = 'CalvinEnv'
     GENMANIP = 'GenmanipEnv'
+    DUMMY = 'DummyRealWorldEnv'
 
     @property
     def value(self):
@@ -23,6 +24,9 @@ class EnvWrapperRegistry(Enum):
         elif self.name == 'GENMANIP':
             from internmanip.env.genmanip_env import GenmanipEnv
             return GenmanipEnv
+        elif self.name == 'DUMMY':
+            from internmanip.env.dummy_realworld_env import DummyRealWorldEnv
+            return DummyRealWorldEnv
         else:
             raise ValueError(f'Invalid env wrapper type: {self.name}. Only {[env_type.name for env_type in EnvWrapperRegistry]} are registered.')
 

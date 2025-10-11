@@ -15,6 +15,7 @@ class EvaluatorRegistry(Enum):
     SIMPLER = 'SimplerEvaluator'
     CALVIN = 'CalvinEvaluator'
     GENMANIP = 'GenmanipEvaluator'
+    DUMMY = 'DummyEvaluator'
 
     @property
     def value(self):
@@ -27,6 +28,9 @@ class EvaluatorRegistry(Enum):
         elif self.name == 'GENMANIP':
             from internmanip.evaluator.genmanip_evaluator import GenmanipEvaluator
             return GenmanipEvaluator
+        elif self.name == 'DUMMY':
+            from internmanip.evaluator.dummy_realworld_evaluator import DummyRealWorldEvaluator
+            return DummyRealWorldEvaluator
         else:
             raise ValueError(f'Invalid evaluator type: {self.name}. Only {[evaluator_type.name for evaluator_type in EvaluatorRegistry]} are registered.')
 

@@ -16,7 +16,7 @@ class EnvCfg(BaseModel):
 
     @field_validator('env_type')
     def check_env_type(cls, v):
-        valid_types = ['SIMPLER', 'CALVIN', 'GENMANIP']
+        valid_types = ['SIMPLER', 'CALVIN', 'GENMANIP', 'DUMMY']
         if v.upper() not in valid_types:
             raise ValueError(f'Invalid environment type: {v}. Only: {valid_types} are supported.')
         return v.upper()

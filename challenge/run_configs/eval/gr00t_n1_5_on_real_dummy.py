@@ -3,7 +3,7 @@ from internmanip.benchmarks.genmanip.config.env_config import FrankaCameraEnable
 
 
 eval_cfg = EvalCfg(
-    eval_type='realarx',
+    eval_type='dummy',
     agent=AgentCfg(
         agent_type='gr00t_n1_5_on_realarx',
         eval_type='realarx',
