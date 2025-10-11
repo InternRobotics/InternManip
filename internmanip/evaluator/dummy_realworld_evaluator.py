@@ -36,7 +36,7 @@ class DummyRealWorldEvaluator(Evaluator):
     def _run_single_episode(self):
         """运行单个episode"""
         step_count = 0
-        max_steps = self.config.env.env_settings.max_steps
+        max_steps = self.config.env.env_settings.max_step
         
         while step_count < max_steps:
             if self.env.is_episode_done:

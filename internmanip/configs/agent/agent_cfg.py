@@ -18,6 +18,10 @@ class AgentCfg(BaseModel):
     class Config:
         arbitrary_types_allowed = True
 
+    @field_validator('eval_type', mode='before')
+    def validate_eval_type(cls, v):
+        return v.upper() if isinstance(v, str) else v
+    
     @field_validator('agent_type', mode='before')
     def validate_agent_type(cls, v):
         return v.upper() if isinstance(v, str) else v

@@ -1,15 +1,9 @@
-import numpy as np
-import rospy
 from typing import List, Dict, Any, Tuple
 import time
-import yaml
-import sys
-import select
-import cv2
+import numpy as np
 
 from internmanip.env.base import EnvWrapper
 from internmanip.configs.env.env_cfg import EnvCfg
-from internmanip.dataset.base import LeRobotSingleDataset, LeRobotMixtureDataset
 
 
 class DummyRealWorldEnv(EnvWrapper):
@@ -64,4 +58,8 @@ class DummyRealWorldEnv(EnvWrapper):
 
     def get_obs(self):
         return self.get_observations()
+    
+    @property
+    def is_episode_done(self):
+        return False 
     

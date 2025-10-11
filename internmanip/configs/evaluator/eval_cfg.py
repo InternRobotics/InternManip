@@ -15,7 +15,7 @@ class EvalCfg(BaseModel):
 
     @field_validator('eval_type')
     def check_eval_type(cls, v):
-        valid_types = ['SIMPLER', 'CALVIN', 'GENMANIP']
+        valid_types = ['SIMPLER', 'CALVIN', 'GENMANIP', 'DUMMY']
         if v.upper() not in valid_types:
             raise ValueError(f'Invalid eval type: {v}. Only: {valid_types} are supported.')
         return v.upper()

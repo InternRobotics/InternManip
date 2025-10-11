@@ -14,6 +14,8 @@ class AgentRegistry(Enum):
     """
     SIMPLER = 'SimplerAgent'
     GENMANIP = 'GenmanipAgent'
+    REALARX = 'RealArxAgent'
+    REPLAY = 'ReplayAgent'
 
     @property
     def value(self):
