@@ -18,7 +18,7 @@ You can use the following command to start the training.
 torchrun --nnodes 1 --nproc_per_node 8 scripts/train/train.py --config run_configs/train/gr00t_n1_5_arx_iros.yaml
 ```
 
-## ✅ Evaluation (WIP)
+## ✅ Evaluation
 
 You can verify the agent’s observation and action spaces by running a dummy test to ensure the I/O data format between the environment and the agent is aligned.  
 Run the following command to perform this test.
@@ -36,5 +36,14 @@ python -m challenge.scripts.start_dummy_evaluator --config challenge/run_configs
 Please check out the [onsite competition rules](./onsite_competition_rules_en-US.md).
 
 
-## 🚀 Code Submission (WIP)
-Submit a Docker image with your agent server preconfigured and ready to run. During the competition, the robot will connect to a local server over the network. We’ll share additional details soon.
+## 🚀 Code Submission
+### Key Requirements
+All competition images must be uploaded to the public image repository by **October 18**. Each image must contain a pre-configured and operational agent server.
+  
+### Image Usage Policy
+- **Debugging Phase (Oct 18)**: Participants may submit multiple images for testing purposes.
+  
+- **Main Competition (Oct 19)**: Only **one** submitted image be used during the official competition.
+  
+### Recommended Practice
+To ensure smooth competition execution, we strongly recommend participants store their submitted images on portable USB drives as offline backups. Bringing these physical copies to the venue will prevent potential delays caused by network issues during image retrieval.
